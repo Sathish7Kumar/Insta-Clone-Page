@@ -200,9 +200,6 @@
     transition: background-color 0.3s ease;
   }
   
-  .heart-btn:hover {
-    color: palevioletred;
-  }
   
   .heart-btn.liked {
     color: red;
@@ -218,9 +215,6 @@
     margin-right: 10px;
 }
 
-.action:hover{
-    cursor: pointer;
-}
 
 .save:hover{
     cursor: pointer;
