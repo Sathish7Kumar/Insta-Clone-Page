@@ -15,7 +15,18 @@
     border-bottom: 1px solid rgba(219, 219, 219, 1);
     background-color: white;
     position: sticky;
-    top: 0;
+    top: -1px;
+}
+
+.bottom-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 10px 15%; */
+    border-bottom: 1px solid rgba(219, 219, 219, 1);
+    background-color: white;
+    position: sticky;
+    bottom: -2px;
 }
 
 .logo{
@@ -36,7 +47,27 @@
     border-radius: 7px;
 }
 
+.searchBox-fp{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 250px;
+    background-color: rgba(239, 239, 239, 1);
+    padding: 3px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+
 .searchBox input{
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: rgba(239, 239, 239, 1);
+    margin-left: 10px;
+}
+
+.searchBox-fp input{
     height: 30px;
     border: none;
     outline: none;
@@ -49,20 +80,38 @@
     display: flex;
 }
 
+.userRoutess ul{
+    list-style: none;
+    display: flex;
+}
+
 .userRoutes ul li{
+    margin-top: 8px;
     margin-right: 20px;
 }
 
+.userRoutess ul li{
+    margin-top: 0px;
+    margin-right: 30px;
+}
 .userRoutes ul li a img{
-    height: 22px;
-    width: 22px;
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
     object-fit: cover;
 }
 
+.userRoutess ul li a img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 .faIcon{
+    margin-top: 2px;
     color: black;
+    font-size: 22px;
 }
 
 .faIcon:hover{
@@ -139,7 +188,7 @@
 /* Post */
 
 .post{
-    margin: 25px 0;
+    margin: 15px 0;
     background-color: white;
     border: 1px solid rgba(219, 219, 219, 1);
     border-radius: 3px;
@@ -308,6 +357,20 @@
     margin-bottom: 20px;
 }
 
+.suggestion-fp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px ;
+    margin-bottom: 20px;
+}
+
+.sugs-fp{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 .btn-switch{
     border: none;
     background-color: #efefef;
@@ -323,6 +386,13 @@
 
 .suggestion-block{
     display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.suggestion-block-fp{
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: 15px;
 }
@@ -373,15 +443,40 @@
     }
 }
 
+@media (max-width:300px){
+    .searchBox{
+        display: none;
+    }
+    .userRoutess ul li{
+        margin-top: 0px;
+        margin-right: 20px;
+    }
+}
+
 @media (max-width:765px){
     .NavBar .searchBox{
         display: none;
+    }
+    .bottom-nav{
+        padding: 10px;
+    }
+    .userRoutes ul li{
+       display: none;
     }
     .bodySection{
         padding: 30px 20px;
         margin-left: 0px;
     }
 }
+
+@media (min-width:765px){
+    .userRoutess{
+        display: none;
+    }
+    .searchBox-fp{
+        display: none;
+    }
+}    
 
 @media (max-width:575px){
     .story .stories{

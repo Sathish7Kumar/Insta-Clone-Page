@@ -1,21 +1,10 @@
-import React from "react";
-import "../App.css";
-import Instagram_logo from "./Instagram_logo.png"
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-function NavBar() {
+const BottomNav = () => {
   return (
-    <div className="NavBar">
-      <div className="logo">
-        <a href="https://www.instagram.com" target="_blank">
-          <img src = {Instagram_logo} alt="insta-logo" />
-          </a>
-      </div>
-      <div className="searchBox">
-        <i className="fa-solid fa-magnifying-glass"></i>
-        <input type="search" placeholder="  Search..." />
-      </div>
-      <div className="userRoutes">
+    <div className="bottom-nav">
+      <div className="userRoutess">
         <ul>
           <li>
             <Link to="/">
@@ -24,7 +13,7 @@ function NavBar() {
           </li>
           <li>
             <a href="/" onClick={(e) => e.preventDefault()} >
-              <i className="faIcon fa-solid fa-film"></i>
+            {<i className="faIcon fa-solid fa-film"></i>}
             </a>
           </li>
           <li>
@@ -34,8 +23,8 @@ function NavBar() {
           </li>
           <li>
             <a href="/" onClick={(e) => e.preventDefault()}>
-            <i className="faIcon fa-brands fa-facebook-messenger"></i>
-            </a>
+              <i className="faIcon fa-brands fa-facebook-messenger"></i>
+              </a>
           </li>
           <li>
             <a href="/" onClick={(e) => e.preventDefault()}>
@@ -47,13 +36,14 @@ function NavBar() {
               <img
                 src="https://ik.imagekit.io/satzz/Insta%20Clone%20/Dp.jpg?updatedAt=1689662139862"
                 alt="DP"
+                style={{marginTop:"3px"}}
               />
             </a>
           </li>
         </ul>
       </div>
-    </div>
-  );
+      </div>
+  )
 }
 
-export default NavBar;
+export default BottomNav

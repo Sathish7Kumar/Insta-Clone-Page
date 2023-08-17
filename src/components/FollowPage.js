@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import BottomNav from "./BottomNav";
 
 const suggestions = [
   {
@@ -42,16 +43,64 @@ const suggestions = [
     isFollowing: "Follow",
   },
   {
-    id: 7,
+    id:7,
     name: "User Name 7",
     userid: "user7",
     image:
       "https://ik.imagekit.io/satzz/Insta%20Clone%20/cA.jpg?updatedAt=1689677324876",
     isFollowing: "Follow",
   },
+  {
+    id:8,
+    name: "User Name 8",
+    userid: "user8",
+    image:
+      "https://ik.imagekit.io/satzz/Insta%20Clone%20/superman.jpeg?updatedAt=1689677324117",
+    isFollowing: "Follow",
+  },
+  {
+    id: 9,
+    name: "User Name 9",
+    userid: "user9",
+    image:
+      "https://ik.imagekit.io/satzz/Insta%20Clone%20/ant.jpeg?updatedAt=1689677324187",
+    isFollowing: "Follow",
+  },
+  {
+    id: 10,
+    name: "User Name 10",
+    userid: "user10",
+    image:
+      "https://ik.imagekit.io/satzz/Insta%20Clone%20/2.JPG?updatedAt=1689686677658",
+    isFollowing: "Follow",
+  },
+  {
+    id: 11,
+    name: "User Name 11",
+    userid: "user11",
+    image:
+      "https://ik.imagekit.io/satzz/Insta%20Clone%20/3.png?updatedAt=1689686677504",
+    isFollowing: "Follow",
+  },
+  {
+    id: 12,
+    name: "User Name 12",
+    userid: "user12",
+    image:
+      "https://ik.imagekit.io/satzz/Insta%20Clone%20/nat2.jpg?updatedAt=1689686130241",
+    isFollowing: "Follow",
+  },
+  {
+    id: 13,
+    name: "User Name 13",
+    userid: "user13",
+    image:
+      "https://ik.imagekit.io/satzz/Insta%20Clone%20/kang.jpeg?updatedAt=1689685774130",
+    isFollowing: "Follow",
+  },
 ];
 
-function Suggestion() {
+function FollowPage() {
   const [followStatus, setFollowStatus] = useState(
     suggestions.map(() => "Follow")
   );
@@ -65,12 +114,16 @@ function Suggestion() {
 
   return (
     <>
-      <div className="suggestion">
-        <p>Suggestions for you</p>
+      <div className="suggestion-fp">
+      <div className="searchBox-fp">
+        <i className="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="  Search..." />
+      </div>
         {/* <button className="btn-see-all">See All</button> */}
       </div>
+      <p className="sugs-fp" style={{textAlign:"center"}}>Suggestions for you</p>
       {suggestions.map((suggestion, index) => (
-        <div className="suggestion-block" key={suggestion.id}>
+        <div className="suggestion-block-fp" key={suggestion.id}>
           <div className="block-left">
             <div className="block-img">
               <img
@@ -98,8 +151,9 @@ function Suggestion() {
           </div>
         </div>
       ))}
+      <BottomNav/>
     </>
   );
 }
 
-export default Suggestion;
+export default FollowPage;

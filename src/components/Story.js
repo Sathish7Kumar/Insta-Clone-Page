@@ -11,49 +11,49 @@ const stories = [
     id: 2,
     user_id: "user2",
     username: 'User Name 2',
-    image: 'https://ik.imagekit.io/satzz/default-image.jpg?updatedAt=1689661689773',
+    image: 'https://ik.imagekit.io/satzz/Insta%20Clone%20/default-image.jpg?updatedAt=1689661689773',
   },
   {
     id: 3,
     user_id: "user3",
     username: 'User Name 3',
-    image: 'https://ik.imagekit.io/satzz/baby.jpg?updatedAt=1689665679047',
+    image: 'https://ik.imagekit.io/satzz/Insta%20Clone%20/baby.jpg?updatedAt=1689665679047',
   },
   {
     id: 4,
     user_id: "user4",
     username: 'User Name 4',
-    image: 'https://ik.imagekit.io/satzz/batman.jpg?updatedAt=1689664867928',
+    image: 'https://ik.imagekit.io/satzz/Insta%20Clone%20/batman.jpg?updatedAt=1689664867928',
   },
   {
     id: 5,
     user_id: "user5",
     username: 'User Name 5',
-    image: 'https://ik.imagekit.io/satzz/iron-man.webp?updatedAt=1689664863210',
+    image: 'https://ik.imagekit.io/satzz/Insta%20Clone%20/iron-man.webp?updatedAt=1689664863210',
   },
   {
     id: 6,
     user_id: "user6",
     username: 'User Name 6',
-    image: 'https://ik.imagekit.io/satzz/thor.webp?updatedAt=1689664864064',
+    image: 'https://ik.imagekit.io/satzz/Insta%20Clone%20/thor.webp?updatedAt=1689664864064',
   },
   {
     id: 7,
     user_id: "user7",
     username: 'User Name 7',
-    image: 'https://ik.imagekit.io/satzz/cA.jpg?updatedAt=1689677324876',
+    image: 'https://ik.imagekit.io/satzz/Insta%20Clone%20/cA.jpg?updatedAt=1689677324876',
   },
   {
     id: 8,
     user_id: "user8",
     username: 'User Name 8',
-    image: 'https://ik.imagekit.io/satzz/superman.jpeg?updatedAt=1689677324117',
+    image: 'https://ik.imagekit.io/satzz/Insta%20Clone%20/superman.jpeg?updatedAt=1689677324117',
   },
   {
     id: 9,
     user_id: "user9",
     username: 'User Name 9',
-    image: 'https://ik.imagekit.io/satzz/ant.jpeg?updatedAt=1689677324187',
+    image: 'https://ik.imagekit.io/satzz/Insta%20Clone%20/ant.jpeg?updatedAt=1689677324187',
   },
 ];
 
@@ -64,7 +64,7 @@ function Story() {
       <div className="stories">
           <a href="/" onClick={(e) => e.preventDefault()}>
             <img
-              src="https://ik.imagekit.io/satzz/Dp.jpg?updatedAt=1689662139862"
+              src="https://ik.imagekit.io/satzz/Insta%20Clone%20/Dp.jpg?updatedAt=1690884839633"
               alt="user1"
               height="60"
               width="60"
